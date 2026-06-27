@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SPS Academy — AI Skills for the Modern Workforce</title>
-<meta name="description" content="Professional online AI training for your teams, delivered by SPS in association with Centenary Networks, a QCTO-accredited Skills Development Provider.">
+<title>SPS Academy — Build Toward an Accredited Qualification</title>
+<meta name="description" content="Credit-bearing AI and technical skills modules for SPS teams, delivered in association with Centenary Networks (QCTO-accredited). Stack credits, ladder toward a full Occupational Certificate, and earn B-BBEE Skills Development points.">
 <style>
   :root{
     --ink:#2b2b2b;
@@ -12,13 +12,15 @@
     --grey:#4d4c4d;
     --bg:#ffffff;
     --bg-soft:#f7f6f4;
-    --orange:#f37424;
-    --orange-deep:#e35e16;
-    --orange-light:#faa819;
-    --orange-tint:#fdeee2;
+    --orange:#2a2a2e;        /* primary UI: charcoal (was orange) */
+    --orange-deep:#121214;   /* darker / hover (near-black) */
+    --orange-light:#43434a;
+    --orange-tint:#f0efed;   /* light grey chip bg */
     --green:#4da446;
-    --green-deep:#339346;
-    --green-tint:#eaf4e8;
+    --green-deep:#2f8f3e;
+    --green-tint:#eef3ee;
+    --accent:#ef6c1a;        /* true orange — deliberate, sparing touches only */
+    --accent-green:#4da446;  /* green — sparing touches only */
     --line:#e7e4df;
     --dark:#222021;
     --max:1180px;
@@ -207,6 +209,27 @@
   .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
   .reveal.in{opacity:1;transform:none}
 
+  /* ===== Monochrome theme: black / white / grey with sparing orange + green ===== */
+  .hero{background:radial-gradient(110% 90% at 88% -10%,rgba(0,0,0,.045),transparent 55%),radial-gradient(90% 80% at 0% 110%,rgba(0,0,0,.03),transparent 55%),var(--bg)}
+  .btn-primary{box-shadow:0 12px 30px -14px rgba(0,0,0,.5)}
+  .btn-primary:hover{background:#000}
+  .feat:hover{box-shadow:0 22px 46px -24px rgba(0,0,0,.16)}
+  .nav-links a:hover,.nav-links a.active{color:var(--ink)}
+  .nav-links a.active::after{background:var(--accent)}           /* touch of orange */
+  .accred-card::before{background:linear-gradient(var(--accent),var(--green))} /* touch */
+  .accredited-feature{background:#fff;border-color:var(--line)}
+  .accredited-feature .badge{background:var(--green)}            /* touch of green */
+  .accredited-feature .side .nqf{color:var(--ink)}
+  .outcomes li::before{background:var(--green)}                  /* touch of green */
+  .ai-action::before{background:radial-gradient(70% 60% at 80% 0%,rgba(255,255,255,.05),transparent 60%),radial-gradient(60% 60% at 0% 100%,rgba(77,164,70,.06),transparent 60%)}
+  .ai-stats .num{color:#fff}
+  .ai-msg.user .av{background:var(--green)}                      /* touch of green */
+  .ccard h4{color:var(--ink)}
+  .ccard-img.has-photo::before{display:none}
+  .cta-band{background:linear-gradient(120deg,#1a1a1c,#34343a)}
+  .cta-band .btn-primary{background:#fff;color:#121214}
+  .cta-band .btn-primary:hover{background:#000;color:#fff}
+
   /* ===================== RESPONSIVE ===================== */
   /* tablet / small laptop */
   @media(max-width:980px){
@@ -278,12 +301,12 @@
   <canvas id="neural"></canvas>
   <div class="wrap hero-grid">
     <div>
-      <span class="badge-live"><span class="dot"></span> AI · Live &amp; Hands-On</span>
-      <span class="eyebrow">AI Skills · Online · South Africa</span>
-      <h1>AI Skills for the <span class="o">Modern Workforce</span></h1>
-      <p class="lead">Professional online AI training for your teams — delivered by SPS, in association with Centenary Networks, a QCTO-accredited Skills Development Provider.</p>
+      <span class="badge-live"><span class="dot"></span> Credit-Bearing · QCTO-Accredited Pathway</span>
+      <span class="eyebrow">Accredited Modules · Stackable Credits · B-BBEE</span>
+      <h1>Build Toward an Accredited Qualification — One Module at a Time</h1>
+      <p class="lead">Credit-bearing AI and technical skills modules for SPS teams, delivered in association with Centenary Networks (QCTO-accredited). Staff learn at their own pace, stack credits as they go, and ladder toward a full Occupational Certificate — while you earn B-BBEE Skills Development points along the way.</p>
       <div class="btn-row">
-        <a href="#courses" class="btn btn-primary">Explore Courses</a>
+        <a href="#courses" class="btn btn-primary">Explore Modules</a>
         <a href="#contact" class="btn btn-ghost">Talk to Our Team</a>
       </div>
     </div>
@@ -386,7 +409,7 @@
       <div class="side"><div class="nqf">5<small>NQF Level</small></div></div>
     </div>
 
-    <div class="course-band-label reveal"><span class="tag">Professional AI Courses</span><span class="ln"></span></div>
+    <div class="course-band-label reveal"><span class="tag">Credit-Bearing Modules</span><span class="ln"></span></div>
     <div class="course-grid">
 
       <!-- Card 1 -->
@@ -786,7 +809,7 @@
   (function(){
     const cv=document.getElementById('neural');if(!cv)return;
     const ctx=cv.getContext('2d');let w,h,nodes,raf;
-    const COLORS=['#f37424','#4da446','#faa819'];
+    const COLORS=['#c7c4c9','#c7c4c9','#c7c4c9','#b9b6bb','#ef6c1a','#4da446']; // mostly grey, rare orange/green
     function size(){const r=cv.parentElement.getBoundingClientRect();w=cv.width=r.width;h=cv.height=r.height;build();}
     function build(){
       const n=Math.min(46,Math.round(w*h/26000));
