@@ -164,12 +164,12 @@ accredited qualification.
 
 ## 8. Roadmap / Open Items
 
+- [x] **Align site to the one-pager** — micro-learning/credits language, energy-sector framing, "Will AI replace you…" hook, and "Start Building / Talk to Our Team" CTAs across home + course template.
 - [ ] **Per-course module outlines** — give each of the 20 courses a tailored, realistic curriculum (drafted; pending sign-off on the rebrand).
 - [ ] **Real content** — videos + PDFs + facilitator bios from SPS/Centenary.
 - [ ] **Working contact form** — currently a non-submitting placeholder; needs an email/Formspree endpoint, and real email/phone (currently `[email address]` / `[phone number]`).
-- [ ] **Reframe deeper pages around micro-learning** — emphasise "units/credits" over "courses" sitewide.
+- [ ] **Energy-sector imagery** — tilt course/hero photography toward the energy industry (copy is already energy-framed).
 - [ ] **Custom domain** (e.g. `academy.sps…`) once decided.
-- [ ] **Energy-sector framing** — tilt imagery/examples toward the energy industry per the one-pager.
 
 ---
 
