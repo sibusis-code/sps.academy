@@ -343,6 +343,121 @@
     {t:"Using AI Responsibly",lessons:["Data privacy at work","Accuracy, sources & hallucinations","Bias & fairness","A simple workplace AI policy"]},
     {t:"Putting It Into Practice",lessons:["Mapping AI to your role","A real workflow, start to finish","Your 30-day AI action plan"]}
   ];
+  const MOD_TOOLS=[
+    {t:"Your AI Toolkit",lessons:["The landscape of workplace AI tools","Choosing the right tool for the job","Setting up safely & securely"]},
+    {t:"Writing & Communication",lessons:["Drafting emails & documents fast","Editing, tone & summarising","Meeting notes & follow-ups"]},
+    {t:"Research & Information",lessons:["Searching & summarising with AI","Fact-checking & verifying sources","Turning research into reports"]},
+    {t:"Data & Automation",lessons:["Spreadsheets & quick analysis","Automating repetitive tasks","Building your daily AI workflow"]}
+  ];
+  const MOD_RESP=[
+    {t:"Foundations of Responsible AI",lessons:["Why responsible AI matters","Key principles & frameworks","Your duty of care at work"]},
+    {t:"Privacy & Data Protection",lessons:["What not to put into AI tools","POPIA & data protection basics","Keeping client data safe"]},
+    {t:"Accuracy & Bias",lessons:["Hallucinations & misinformation","Recognising and reducing bias","Human oversight & accountability"]},
+    {t:"Responsible Use in Practice",lessons:["Disclosure & transparency","Drafting a workplace AI policy","Case studies & red flags"]}
+  ];
+  const MOD_LEAD=[
+    {t:"The Leader's View of AI",lessons:["What every leader must know","Separating hype from value","AI maturity & readiness"]},
+    {t:"Finding Opportunities",lessons:["Spotting high-value use cases","Building the business case","Prioritising & sequencing"]},
+    {t:"Leading AI-Enabled Teams",lessons:["Skills, roles & upskilling","Managing change & resistance","Governance & risk controls"]},
+    {t:"From Pilot to Scale",lessons:["Running a successful pilot","Measuring impact & ROI","Your AI leadership roadmap"]}
+  ];
+  const MOD_VENTURE=[
+    {t:"AI & Opportunity",lessons:["New business models powered by AI","Where the gaps are in Africa","Validating an AI idea"]},
+    {t:"Building the Venture",lessons:["From concept to MVP","AI tools for founders","Lean experimentation"]},
+    {t:"Go-To-Market",lessons:["Customers, pricing & positioning","Growth with limited resources","Pitching & funding"]},
+    {t:"Scaling Responsibly",lessons:["Data, ethics & trust","Building a team","Your venture action plan"]}
+  ];
+  const MOD_TECH=[
+    {t:"Computer Systems Fundamentals",lessons:["Hardware components & architecture","Operating systems overview","Number systems & data"]},
+    {t:"Hardware Installation & Maintenance",lessons:["Assembling & upgrading systems","Diagnostics & fault-finding","Preventative maintenance"]},
+    {t:"Networking Essentials",lessons:["Network types & topologies","Setting up & configuring networks","Troubleshooting connectivity"]},
+    {t:"Software & Support",lessons:["Installing & configuring software","User & technical support","Security & backups"]},
+    {t:"Workplace Practice & Assessment",lessons:["Workplace safety & ethics","Documentation & service records","Portfolio of Evidence & assessment"]}
+  ];
+  const MOD_DEPLOY_TML=[
+    {t:"From Model to Microcontroller",lessons:["Recap: the TinyML pipeline","Why deploy on-device","Hardware & toolchain setup"]},
+    {t:"TensorFlow Lite for Microcontrollers",lessons:["Converting & quantising models","Writing the inference code","Memory & performance limits"]},
+    {t:"Building the Application",lessons:["Capturing sensor data","Running inference on-device","Handling outputs & actions"]},
+    {t:"Deploy & Iterate",lessons:["Flashing to the device","Debugging on hardware","Optimising & shipping your app"]}
+  ];
+  const MOD_FUND_TML=[
+    {t:"What is TinyML?",lessons:["Machine learning in tiny places","Embedded systems basics","Real-world TinyML applications"]},
+    {t:"The Machine Learning Basics",lessons:["Data, features & labels","Training a simple model","Evaluating performance"]},
+    {t:"Neural Networks Demystified",lessons:["How neural networks learn","Models small enough to fit","Tradeoffs & constraints"]},
+    {t:"The Language of TinyML",lessons:["Sensors & signals","The end-to-end workflow","Where to go next"]}
+  ];
+  const MOD_STRATEGY=[
+    {t:"The Strategic Landscape",lessons:["AI beyond the hype","What's actually changing","Threats & opportunities"]},
+    {t:"Building Your AI Strategy",lessons:["Aligning AI to business goals","Capabilities, data & talent","Prioritising initiatives"]},
+    {t:"Creating Real Value",lessons:["Use cases that move the needle","Measuring value & ROI","Avoiding common traps"]},
+    {t:"Leading the Transformation",lessons:["Operating model & governance","Culture & change","Your 90-day strategy plan"]}
+  ];
+  const MOD_MED_FOUND=[
+    {t:"AI in Medicine, Explained",lessons:["Why AI in healthcare now","Core concepts for clinicians","Data in medicine"]},
+    {t:"Machine Learning for Health",lessons:["How clinical models are built","Validation & evidence","Reading the literature critically"]},
+    {t:"Applications in Practice",lessons:["Imaging & diagnostics","Prediction & risk scoring","Workflow & decision support"]},
+    {t:"Safety, Ethics & the Future",lessons:["Bias, equity & safety","Regulation & governance","The future of AI in medicine"]}
+  ];
+  const MOD_ETHICS_BIZ=[
+    {t:"The Ethics of AI at Work",lessons:["Why ethics is a business issue","Key risks & harms","Principles & frameworks"]},
+    {t:"Bias & Fairness",lessons:["Where bias comes from","Detecting & measuring bias","Mitigation strategies"]},
+    {t:"Trust & Transparency",lessons:["Explainability & disclosure","Privacy & consent","Accountability & oversight"]},
+    {t:"Building an Ethical Culture",lessons:["Policies & guardrails","Responsible procurement","Your ethical AI checklist"]}
+  ];
+  const MOD_IN_ACTION=[
+    {t:"Understanding AI in All Its Forms",lessons:["The AI toolbox","What AI can & can't do","Mapping AI to your organisation"]},
+    {t:"Strategy & Adoption",lessons:["Building an adoption roadmap","Data readiness","Risk & responsible adoption"]},
+    {t:"People & Process",lessons:["Roles, skills & culture","Redesigning workflows","Change management"]},
+    {t:"Delivering Impact",lessons:["Measuring outcomes","Scaling what works","Your organisational action plan"]}
+  ];
+  const MOD_CYBER=[
+    {t:"The Cyber Threat Landscape",lessons:["Threats, actors & motives","Anatomy of an attack","Risk in context"]},
+    {t:"Technology & Defence",lessons:["Core security technologies","Identity, access & encryption","Detection & response"]},
+    {t:"Policy & Governance",lessons:["Laws, standards & compliance","Building security policy","Incident & crisis response"]},
+    {t:"Leading on Cyber",lessons:["Security culture & awareness","Boardroom communication","Your cyber resilience plan"]}
+  ];
+  const MOD_MED_NLP=[
+    {t:"NLP in Healthcare",lessons:["Why language matters in medicine","Clinical text & its challenges","The NLP pipeline"]},
+    {t:"Core NLP Techniques",lessons:["From text to data","Named entities & coding","Large language models in medicine"]},
+    {t:"Applications",lessons:["Clinical notes & documentation","Literature & evidence mining","Patient communication"]},
+    {t:"Safety & Implementation",lessons:["Bias, privacy & safety","Validation & oversight","Deploying NLP responsibly"]}
+  ];
+  const MOD_CS_LAW=[
+    {t:"How Computers Work",lessons:["Data, bits & encoding","Software, systems & the internet","Key concepts for lawyers"]},
+    {t:"Data & Algorithms",lessons:["How algorithms make decisions","Databases & data flows","Security & encryption basics"]},
+    {t:"AI & Emerging Tech",lessons:["What AI really is","Privacy, IP & liability","Evidence & e-discovery"]},
+    {t:"Tech in Legal Practice",lessons:["Legal tech tools","Advising tech-driven clients","Your tech-fluency toolkit"]}
+  ];
+  const MOD_ESS_BIZ=[
+    {t:"AI Foundations",lessons:["What AI is, in business terms","The tools you'll meet","Opportunities & limits"]},
+    {t:"AI at Work",lessons:["Everyday business use cases","Working alongside AI","Productivity & quality"]},
+    {t:"Value & Risk",lessons:["Building the case for AI","Risk, ethics & compliance","Avoiding the pitfalls"]},
+    {t:"Getting Started",lessons:["Your first AI projects","Upskilling your team","Your business AI plan"]}
+  ];
+  const MOD_AGENTIC=[
+    {t:"What is Agentic AI?",lessons:["From chatbots to agents","How AI agents work","Where agents add value"]},
+    {t:"Business Applications",lessons:["Automating multi-step work","Agents in the enterprise","Real-world examples"]},
+    {t:"Risks & Controls",lessons:["New risks of autonomy","Guardrails & oversight","Security & reliability"]},
+    {t:"Adopting Agents",lessons:["Designing agent workflows","Governance & accountability","Your agentic AI roadmap"]}
+  ];
+  const MOD_COMPETING=[
+    {t:"The New Rules of Competition",lessons:["How AI reshapes industries","Digital operating models","Network effects & scale"]},
+    {t:"The AI-Powered Firm",lessons:["Data & the AI factory","Rearchitecting the business","Removing the bottlenecks"]},
+    {t:"Strategy & Advantage",lessons:["New sources of advantage","Ecosystems & platforms","Disruption & response"]},
+    {t:"Leading the Change",lessons:["Capabilities & culture","Ethics & responsibility","Your competitive AI agenda"]}
+  ];
+  const MOD_LEAD_EMERG=[
+    {t:"The Emerging-Tech Landscape",lessons:["AI, security & beyond","Strategic significance","Risk & opportunity"]},
+    {t:"Strategy & Decision-Making",lessons:["Evaluating new technologies","Investment & prioritisation","Building capability"]},
+    {t:"Security & Risk",lessons:["Threats & resilience","Governance & policy","Crisis leadership"]},
+    {t:"Leading Through Change",lessons:["Culture & talent","Ethics & responsibility","Your leadership action plan"]}
+  ];
+  const MOD_MED_SIGNAL=[
+    {t:"Biomedical Signals 101",lessons:["Signals in medicine (ECG, EEG & more)","From sensor to data","Why interpretation is hard"]},
+    {t:"Machine Learning for Signals",lessons:["Features & representations","Deep learning for time series","Training & validation"]},
+    {t:"Diagnostic Applications",lessons:["Detecting abnormalities","Monitoring & alerts","Case studies"]},
+    {t:"Safety & Deployment",lessons:["Evidence, bias & safety","Clinical integration","The road ahead"]}
+  ];
 
   const COURSES={
     "ai-fundamentals":{title:"AI Fundamentals for the Workplace",cat:"Business",mode:"Online · Self-paced",level:"Beginner",img:"1677442136019-21780ecad995",lead:"A practical, video-led introduction to artificial intelligence for non-technical staff — what it is, how it works, and how to use everyday AI tools confidently and responsibly.",modules:MOD_FUND},
@@ -366,6 +481,10 @@
     "leadership-emerging-tech":{title:"Leadership in Emerging Technology: Security, Strategy & Risk",cat:"Social Sciences",mode:"In-Person",level:"Executive",img:"1521737604893-d14cc237f11d",lead:"An executive program equipping leaders with the technical, strategic and policy foundations to navigate critical emerging technologies."},
     "ai-medicine-signal":{title:"AI in Medicine: Biomedical Signal Interpretation",cat:"Health & Medicine",mode:"Online · Self-paced",level:"Advanced",img:"1559757148-5c350d0d3c56",lead:"Learn about advances in interpreting biomedical signals and the use of machine learning and deep learning to aid analysis and diagnosis."}
   };
+
+  // attach each module's bespoke curriculum
+  const MODMAP={"ai-tools-productivity":MOD_TOOLS,"responsible-ai":MOD_RESP,"ai-leaders":MOD_LEAD,"new-venture":MOD_VENTURE,"computer-technician":MOD_TECH,"deploying-tinyml":MOD_DEPLOY_TML,"fundamentals-tinyml":MOD_FUND_TML,"ai-strategy":MOD_STRATEGY,"ai-medicine-foundations":MOD_MED_FOUND,"ai-ethics-business":MOD_ETHICS_BIZ,"ai-in-action":MOD_IN_ACTION,"cybersecurity":MOD_CYBER,"ai-medicine-nlp":MOD_MED_NLP,"cs-for-lawyers":MOD_CS_LAW,"ai-essentials-business":MOD_ESS_BIZ,"agentic-ai":MOD_AGENTIC,"competing-age-ai":MOD_COMPETING,"leadership-emerging-tech":MOD_LEAD_EMERG,"ai-medicine-signal":MOD_MED_SIGNAL};
+  for(const k in MODMAP){ if(COURSES[k]) COURSES[k].modules=MODMAP[k]; }
 
   function getSlug(){
     const p=new URLSearchParams(location.search).get('c');
