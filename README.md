@@ -13,27 +13,34 @@ site is built so anyone can maintain or extend it.
 
 ## 1. The Spine (positioning — do not drift from this)
 
-The programme is **not** sold as "AI training courses." It is sold as an **accredited micro-learning
-pathway**. Every page should reinforce this spine:
+The programme is **not** sold as "AI training courses." It is sold as **credit-bearing modules that
+ladder toward a national qualification**. The whole site revolves around this spine (boss-approved,
+28 Jun 2026):
 
-1. **Micro-learning, not marathons** — short, focused units fit around the job (minutes, not months). No one comes off the job for a qualification they may never finish.
-2. **Internationally aligned, locally accredited** — curriculum benchmarked to global standards, delivered through **Centenary Networks (QCTO-accredited)**; credible to staff, recognised nationally.
-3. **Credits that stack** — every unit is **credit-bearing** and ladders toward a national qualification, at the learner's own pace.
-4. **Boost your scorecard** — delivered through an accredited provider, so training spend supports **B-BBEE Skills Development** — recognised, documented, claimable.
-5. **For everyone** — one programme, one standard, across every team.
+1. **Start small, no big commitment** — enrol someone in a single credit-bearing module (days, not months). No need to commit anyone to a full qualification up front.
+2. **Credits accumulate over time** — every module carries credits toward the Occupational Certificate: Computer Technician (NQF 5, 282 credits); learners build toward certification at their own pace.
+3. **Skills spend that scores** — delivered through an accredited provider, so each module supports the **B-BBEE Skills Development** scorecard — recognised training, properly documented.
+4. **A qualification that's theirs to keep** — employees earn a national, portable credential — a real reason to stay, learn, and grow with SPS.
 
-**Audience:** SPS (Sustainable Power Solutions) — the **energy sector**. Framing is workforce
-development for an AI-disrupted industry, aimed at decision-makers (training spend, scorecard) and
-the staff who'll learn.
+**Audience:** SPS (Sustainable Power Solutions) — a **solar / energy business**. Framing is workforce
+development for an AI-disrupted sector, aimed at decision-makers (skills spend, scorecard) and the
+technicians, installers and support teams who'll learn.
 
-**Primary calls to action:** `Start Building` · `Talk to Our Team`
+**The energy-sector line:** *"For a solar business, this means technicians, installers, and support
+teams growing recognised technical and AI capability in focused bursts — each module a step toward
+full certification, each one claimable spend, each one building the capability SPS needs as the
+sector goes digital."*
+
+**Primary calls to action:** `Explore Modules` · `Talk to Our Team`
 
 ### Approved hero copy (current)
-- **Headline:** Build Toward an Accredited Qualification — One Module at a Time
-- **Subtext:** Credit-bearing AI and technical skills modules for SPS teams, delivered in association
-  with Centenary Networks (QCTO-accredited). Staff learn at their own pace, stack credits as they go,
-  and ladder toward a full Occupational Certificate — while you earn B-BBEE Skills Development points
-  along the way.
+- **Headline:** Build Toward a National Qualification — One Module at a Time
+- **Subtext:** Credit-bearing AI and technical skills modules for SPS, delivered in association with
+  Centenary Networks (QCTO-accredited Skills Development Provider). Your people choose their modules,
+  build credits at their own pace, and earn an accredited qualification that's theirs to keep — while
+  SPS earns B-BBEE Skills Development points along the way.
+- **Driver's-seat line:** AI is changing how the energy sector works — and the people who get ahead of
+  it will be the ones who shape where it goes… Not training handed down — a path they own.
 
 ---
 
@@ -151,11 +158,14 @@ git push          # site updates automatically
 
 ## 7. Accreditation (legal — keep verbatim)
 
-> Micro-learning units are credit-bearing toward the **Occupational Certificate: Computer Technician**
+> Modules are credit-bearing toward the **Occupational Certificate: Computer Technician**
 > (NQF 5, Qualification ID **101408**, 282 credits), delivered in association with **Centenary
 > Networks (Pty) Ltd**, accredited by the **Quality Council for Trades and Occupations (QCTO)** as a
 > Skills Development Provider. Accreditation No. **07-QCTO/SDP180526182035**, valid **15 May 2026 –
 > 14 May 2031**.
+
+Per the boss, this block should appear on the **credentials / about section** (it's rendered in the
+About section's accreditation note) as well as the footer.
 
 Non-accredited short courses must be labelled as such; only the Computer Technician pathway is the
 accredited qualification.
